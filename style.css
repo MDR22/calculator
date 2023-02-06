@@ -6,3 +6,8 @@
 #calculator-content {
     width: 400px;
 }
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
