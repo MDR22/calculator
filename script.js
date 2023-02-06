@@ -19,4 +19,4 @@ function division(a, b) {
 // Add operate function that takes an operator and 2 numbers and then calls one of the operation functions
 function operate(operator, a, b) {
 
-}
+};
