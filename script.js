@@ -1,3 +1,5 @@
+// Add functions for each operation
+
 function addition(a, b) {
     return a + b;
 };
@@ -15,5 +17,5 @@ function division(a, b) {
 };
 
 function operate(operator, a, b) {
-    
+
 }
