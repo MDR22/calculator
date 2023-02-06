@@ -13,3 +13,7 @@ function multiplication(a, b) {
 function division(a, b) {
     return a / b;
 };
+
+function operate(operator, a, b) {
+    
+}
