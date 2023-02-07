@@ -3,6 +3,12 @@
     margin: 5px;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #calculator-content {
     width: 400px;
 }
@@ -10,4 +16,17 @@
 #buttons {
     display: flex;
     flex-wrap: wrap;
+}
+
+#display {
+    height: 50px;
+}
+
+#clear-button {
+    height: 50px;
+}
+
+.button {
+    height: 85px;
+    width: 85px;
 }
