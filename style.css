@@ -38,10 +38,12 @@ body {
     text-align: center;
     vertical-align: middle;
     line-height: 85px;
+    font-size: 30px;
 }
 
 .operation {
     background-color: #525f88;
+    color: #d0d5d9;
 }
 
 .number {
@@ -50,4 +52,5 @@ body {
 
 .equals {
     background-color: #3586c3;
+    color: #d0d5d9;
 }
