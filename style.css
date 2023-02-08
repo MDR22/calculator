@@ -16,6 +16,11 @@ body {
     color: #d0d5d9;
 }
 
+#calculator-name {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 #buttons {
     display: flex;
     flex-wrap: wrap;
@@ -25,6 +30,9 @@ body {
     height: 50px;
     text-align: right;
     background-color: #587a6c;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    padding: 5px;
 }
 
 #clear-button {
