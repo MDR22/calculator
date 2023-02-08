@@ -21,6 +21,14 @@ function operate(operator, a, b) {
 
 };
 
+// Add starting values for calculations
+
+let numberOne = "";
+
+let numberTwo = "";
+
+let operation = "";
+
 // Add function to clear display and set it back to 0
 
 const display = document.getElementById("display");
