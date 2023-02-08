@@ -20,3 +20,12 @@ function division(a, b) {
 function operate(operator, a, b) {
 
 };
+
+// Add function to clear display and set it back to 0
+
+const display = document.getElementById("display");
+const clear = document.getElementById("clear-button");
+
+clear.addEventListener("click", function() {
+      display.textContent = 0;
+});
