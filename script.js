@@ -29,3 +29,13 @@ const clear = document.getElementById("clear-button");
 clear.addEventListener("click", function() {
       display.textContent = 0;
 });
+
+// Add function that updates display when number buttons are pressed
+
+const numberButtons = document.getElementsByClassName("number");
+
+for (const numberButton of numberButtons) {
+    numberButton.addEventListener("click", function onClick() {
+        display.textContent = "number!";
+    });
+};
