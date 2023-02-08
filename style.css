@@ -28,8 +28,8 @@ body {
 }
 
 #clear-button {
-    height: 50px;
-    text-align: center;
+    font-size: 40px;
+    width: 350px;
 }
 
 .button {
