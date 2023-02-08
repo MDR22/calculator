@@ -36,6 +36,6 @@ const numberButtons = document.getElementsByClassName("number");
 
 for (const numberButton of numberButtons) {
     numberButton.addEventListener("click", function onClick() {
-        display.textContent = "number!";
+        display.textContent += numberButton.id;
     });
 };
