@@ -18,7 +18,21 @@ function division(a, b) {
 
 // Add operate function that takes an operator and 2 numbers and then calls one of the operation functions
 function operate(operator, a, b) {
-
+    a = numberOne;
+    b = numberTwo;
+    if (operation === "multiplication") {
+        result = multiplication(a, b);
+        display.textContent = result;
+    } else if (operation === "division") {
+        result = division(a, b);
+        display.textContent = result;
+    } else if (operation === "addition") {
+        result = addition(a, b);
+        display.textContent = result;
+    } else if (operation = "subtraction") {
+        result = subtraction(a, b);
+        display.textContent = result;
+    }
 };
 
 // Add starting values for calculations
@@ -29,6 +43,7 @@ let numberTwo = "";
 
 let operation = "";
 
+let result = "";
 // Add function to clear display and set it back to 0
 
 const display = document.getElementById("display");
@@ -54,8 +69,18 @@ const operationButtons = document.getElementsByClassName("operation");
 
 for (const operationButton of operationButtons) {
     operationButton.addEventListener("click", function onClick() {
-        numberOne = display.textContent;
+        numberOne = Number(display.textContent);
         operation = operationButton.id;
         display.textContent = "";
     });
 };
+
+// Add function for equals button that computes the result
+
+const equalsButton = document.getElementById("=");
+
+equalsButton.addEventListener("click", function onClick() {
+    numberTwo = Number(display.textContent);       
+    operate(operation, numberOne, numberTwo);
+    display.textContent = result;
+    });
