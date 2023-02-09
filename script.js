@@ -47,3 +47,15 @@ for (const numberButton of numberButtons) {
         display.textContent += numberButton.id;
     });
 };
+
+// Add function that registers the operation called when operator is pressed
+
+const operationButtons = document.getElementsByClassName("operation");
+
+for (const operationButton of operationButtons) {
+    operationButton.addEventListener("click", function onClick() {
+        numberOne = display.textContent;
+        operation = operationButton.id;
+        display.textContent = "";
+    });
+};
