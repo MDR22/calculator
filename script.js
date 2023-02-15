@@ -84,3 +84,13 @@ equalsButton.addEventListener("click", function onClick() {
     operate(operation, numberOne, numberTwo);
     display.textContent = result;
     });
+
+// Add function that adds decimal to numbers, but only in correct position
+
+const decimalButtons = document.getElementsByClassName("decimal");
+
+for (const decimalButton of decimalButtons) {
+    decimalButton.addEventListener("click", function onClick() {
+        display.textContent += decimalButton.id;
+    });
+};
