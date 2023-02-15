@@ -50,7 +50,7 @@ const display = document.getElementById("display");
 const clear = document.getElementById("clear-button");
 
 clear.addEventListener("click", function() {
-      display.textContent = 0;
+      display.textContent = "";
 });
 
 // Add function that updates display when number buttons are pressed
